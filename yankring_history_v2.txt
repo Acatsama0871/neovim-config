@@ -1,0 +1,15 @@
+colorscheme nord,V
+" use 256 colors when possible,V
+endif,V
+    colorscheme delek,V
+else,V
+    colorscheme vim-monokai-tasty,V
+    endif,V
+        let &t_Co = 256,V
+    if !has('gui_running'),V
+if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256'),V
+Plug 'patstockwell/vim-monokai-tasty',V
+Plug 'arcticicestudio/nord-vim',V
+set background=dark,V
+map <Q> :NERDTreeToggle<CR>,V
+" Automatically sort python imports" Highlight matching html tags,V
